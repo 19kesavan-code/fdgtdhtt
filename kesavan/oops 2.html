@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class stundent{
+            constructor(id,name,age,course){
+                this.id=id
+                this.name=name;
+                this.age=age
+                this.course=course;
+            }
+            displaydetails(){
+                document.write("student id:",this. id)
+                document.write("name :",this.name)
+                document.write("age :",this.age)
+                document.write("course :",this.course)
+                document.write("           ");
+
+            }
+            isadult(){
+                if(this.age>=18){
+              document.write(this.name+"is an adult")
+                }else{
+          document.write(this.name+"is not an adult");
+                }
+                
+            }
+        }
+        let stundent1=new stundent(101,"arun",20,"computerscience");
+        let student2=new stundent(102,"priya",17,"information technology")
+
+        stundent1.displaydetails();
+        stundent1.isadult();
+
+        student2.displaydetails();
+        student2.isadult();
+
+    </script>
+</body>
+</html>

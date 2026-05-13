@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="bg">changebackground</button>
+    <script>
+        document.getElementById("bg").onclick=function(){
+            document.body.style.backgroundColor="red"
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+<hr>
+<hr>
+<br>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="password"  id="pwd">
+    <button id="show">show</button>
+    <script>
+        document.getElementById("show").onclick=function(){
+            let pwd=document.getElementById("pwd")
+            pwd.type=pwd.type==="password"?"text":"password";
+
+        }
+    </script>
+</body>
+</html>
+<hr><hr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea  id="text"></textarea>
+    <p>characters:<span id="count">0</span></p>
+    <script>
+        document.getElementById("text").addEventListener("input")
+        function(){
+            document.getElementById("count").innerText=
+            this.value.lenght;
+
+        }
+
+    </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="item">
+    <button>add</button>
+    <ul id="list"></ul>
+    <script>
+        document.querySelector("button").onclick=function(){
+            let value=
+            document.getElementById("item").value;let li=
+            document.createElement("li");li.innertext=value;
+            document.getElementById("list").appendChild(li);
+            
+        }
+    </script>
+</body>
+</html>

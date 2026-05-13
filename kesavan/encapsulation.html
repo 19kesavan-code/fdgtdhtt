@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class BanKAccount{
+            constructor(accountHolder,balance){
+             this.accountHolder=accountHolder
+             this.#balance=balance;
+
+            }
+            deposit(amount){
+                if(amount>0){
+                    document.write("Annual Deposited:",amount);
+
+                }
+            }
+
+
+        }
+           withdraw(amount){
+            if(amount<=this.#balance){
+                this.#balance-=amount;
+
+            }else{
+                document.write("Amount withdraw:",amount)
+
+            }
+           }
+           getBalance(){
+            return this.#balance;
+
+           }
+           let account1=new BanKAccount("ramesh",5000);
+           account1.deposit(2000);
+           account1.withdraw(3000);
+           document.write("Balance:",account1.getBalancwe());
+           
+    </script>
+</body>
+</html>
